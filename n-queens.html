@@ -19,11 +19,14 @@
     body {
       margin: 0;
       display: flex;
+      flex-direction: column;
       justify-content: center;
+      gap: 32px;
       align-items: center;
       min-height: 100vh;
       text-align: center;
       background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      font-family: 'Courier New', Courier, monospace;
     }
 
     table {
@@ -145,6 +148,20 @@
       padding: 0;
       /* margin: 0 16px; */
     }
+    .authors {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      margin-top: 32px;
+    }
+    
+    .authorsSpan span {
+      color: #333333;
+      font-weight: bold;
+    }
+
+
   </style>
 
 </head>
@@ -164,6 +181,12 @@
       </select>
     </div>
   </div>
+
+  <p class="authors">Made by <span class="authorsSpan"><span>Amr Shoukry</span>, <span>Saad Al-Tohamy</span>,
+    <span>Shahd
+      El-Badrawy</span></span></p>
+
+  
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <script>
     class Node {
