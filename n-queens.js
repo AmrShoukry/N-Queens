@@ -1,7 +1,7 @@
 const select = document.getElementById('queens_select');
 const chessDiv = document.getElementById('chess_div');
 let labels = [];
-import dfs from './n-queensNODE.js';
+import { dfs } from './n-queensNODE.js';
 let solutions;
 
 function generate_table(e, val) {
